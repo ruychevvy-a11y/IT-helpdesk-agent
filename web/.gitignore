@@ -1,0 +1,4 @@
+# 依赖和打包产物，npm install / npm run build 重建
+node_modules
+dist
+*.tsbuildinfo

@@ -1,0 +1,130 @@
+{"query_id": "q01", "type": "single", "role": "employee", "question": "出差住酒店，wifi能刷网页，可公司VPN就是连不上", "gold_doc_ids": ["vpn_connect"], "key_facts": ["热点"], "forbidden_doc_ids": []}
+{"query_id": "q02", "type": "single", "role": "employee", "question": "vpn老是用十来分钟就断，每次都得重新输密码", "gold_doc_ids": ["vpn_disconnect"], "key_facts": ["TCP"], "forbidden_doc_ids": []}
+{"query_id": "q03", "type": "single", "role": "employee", "question": "苹果手机想收公司邮件，收件服务器填啥", "gold_doc_ids": ["mobile_email"], "key_facts": ["mail.example.com", "993"], "forbidden_doc_ids": []}
+{"query_id": "q04", "type": "single", "role": "employee", "question": "客户说昨天给我发了报价，我收件箱垃圾箱都翻遍了也没有", "gold_doc_ids": ["external_mail_missing"], "key_facts": ["隔离区"], "forbidden_doc_ids": []}
+{"query_id": "q05", "type": "single", "role": "employee", "question": "连着输错了密码，现在登录说锁定了，得等多长时间", "gold_doc_ids": ["account_locked"], "key_facts": ["15 分钟"], "forbidden_doc_ids": []}
+{"query_id": "q06", "type": "single", "role": "employee", "question": "密码忘了，能不能让IT直接给我重置一个新的", "gold_doc_ids": ["password_forgot"], "key_facts": ["/forgot"], "forbidden_doc_ids": []}
+{"query_id": "q07", "type": "single", "role": "employee", "question": "新密码最少几位？必须要有大写和符号吗", "gold_doc_ids": ["password_change"], "key_facts": ["10 位"], "forbidden_doc_ids": []}
+{"query_id": "q08", "type": "single", "role": "employee", "question": "市场部用的那个CRM我也想用，得谁点头", "gold_doc_ids": ["access_levels"], "key_facts": ["直属经理"], "forbidden_doc_ids": []}
+{"query_id": "q09", "type": "single", "role": "employee", "question": "申请生产服务器的权限，批下来能用几天", "gold_doc_ids": ["access_levels"], "key_facts": ["7 天"], "forbidden_doc_ids": []}
+{"query_id": "q10", "type": "single", "role": "employee", "question": "权限申请点错系统了，能撤销吗", "gold_doc_ids": ["access_request_status"], "key_facts": ["驳回"], "forbidden_doc_ids": []}
+{"query_id": "q11", "type": "single", "role": "employee", "question": "新电脑怎么连2楼那台能打彩色的打印机", "gold_doc_ids": ["printer_setup"], "key_facts": ["print01"], "forbidden_doc_ids": []}
+{"query_id": "q12", "type": "single", "role": "employee", "question": "打印出来的字越来越淡，是不是该换墨了", "gold_doc_ids": ["print_quality"], "key_facts": ["粉盒"], "forbidden_doc_ids": []}
+{"query_id": "q13", "type": "single", "role": "employee", "question": "想看产品部共享文件夹里的资料，要怎么开", "gold_doc_ids": ["shared_drive_permission"], "key_facts": ["服务请求工单"], "forbidden_doc_ids": []}
+{"query_id": "q14", "type": "single", "role": "employee", "question": "装个软件提示要管理员密码，我没有啊", "gold_doc_ids": ["software_install"], "key_facts": ["软件中心"], "forbidden_doc_ids": []}
+{"query_id": "q15", "type": "single", "role": "employee", "question": "咖啡洒键盘上了，现在电脑黑屏开不了机", "gold_doc_ids": ["laptop_liquid_spill"], "key_facts": ["充电"], "forbidden_doc_ids": []}
+{"query_id": "q16", "type": "single", "role": "employee", "question": "插了扩展坞，外接屏一直显示无信号", "gold_doc_ids": ["external_monitor"], "key_facts": ["输入源"], "forbidden_doc_ids": []}
+{"query_id": "q17", "type": "single", "role": "manager", "question": "等会儿要开会，会议室电视Win+K搜不到投屏", "gold_doc_ids": ["meeting_room_display"], "key_facts": ["访客 Wi-Fi"], "forbidden_doc_ids": []}
+{"query_id": "q18", "type": "single", "role": "employee", "question": "收到周总的邮件让我今天下班前给新供应商打款，有点怀疑", "gold_doc_ids": ["phishing_report"], "key_facts": ["@example.com"], "forbidden_doc_ids": []}
+{"query_id": "q19", "type": "single", "role": "employee", "question": "下周一入职，第一天要先弄好哪些账号和电脑设置", "gold_doc_ids": ["onboarding_guide"], "key_facts": ["初始密码"], "forbidden_doc_ids": []}
+{"query_id": "q20", "type": "single", "role": "manager", "question": "下属申请了人事系统的权限，我批之前该核实些什么", "gold_doc_ids": ["approver_guide"], "key_facts": ["业务理由"], "forbidden_doc_ids": []}
+{"query_id": "q21", "type": "single", "role": "manager", "question": "组里有人月底离职，他的系统权限多久能收干净", "gold_doc_ids": ["offboarding"], "key_facts": ["5 个工作日"], "forbidden_doc_ids": []}
+{"query_id": "q22", "type": "single", "role": "it_admin", "question": "有人打电话自称市场部的，说账号锁了让我立马解锁，我该怎么办", "gold_doc_ids": ["unlock_identity_verification"], "key_facts": ["回拨"], "forbidden_doc_ids": []}
+{"query_id": "q23", "type": "single", "role": "it_admin", "question": "夜里线上告警要马上登生产机排查，审批还卡着怎么办", "gold_doc_ids": ["prod_emergency_access"], "key_facts": ["应急账号"], "forbidden_doc_ids": []}
+{"query_id": "q24", "type": "single", "role": "it_admin", "question": "一上午好几个同事都说VPN登不上，提示用户数满了", "gold_doc_ids": ["vpn_gateway_troubleshooting"], "key_facts": ["并发"], "forbidden_doc_ids": []}
+{"query_id": "q25", "type": "single", "role": "it_admin", "question": "队列里有张权限开通失败的工单，该怎么弄", "gold_doc_ids": ["provision_failure_ticket"], "key_facts": ["重新提交"], "forbidden_doc_ids": []}
+{"query_id": "q26", "type": "single", "role": "it_admin", "question": "员工说收到密码已重置的邮件，可他根本没改过密码", "gold_doc_ids": ["account_compromise_response"], "key_facts": ["审计日志"], "forbidden_doc_ids": []}
+{"query_id": "q27", "type": "cross_doc", "role": "employee", "question": "改完密码后手机邮箱一直弹密码错误，没过多久账号又被锁了", "gold_doc_ids": ["account_locked", "mobile_email"], "key_facts": ["旧密码"], "forbidden_doc_ids": []}
+{"query_id": "q28", "type": "cross_doc", "role": "employee", "question": "刚入职财务部，SAP还要单独申请吗？别的系统又怎么申请", "gold_doc_ids": ["onboarding_guide", "access_request"], "key_facts": ["不用申请"], "forbidden_doc_ids": []}
+{"query_id": "q29", "type": "cross_doc", "role": "employee", "question": "生产服务器权限过期了，之前还被驳回过一次，现在还能再申请吗", "gold_doc_ids": ["access_levels", "access_request_status"], "key_facts": ["重新申请"], "forbidden_doc_ids": []}
+{"query_id": "q30", "type": "cross_doc", "role": "employee", "question": "点了邮件里的链接还输了密码，该怎么改密码", "gold_doc_ids": ["phishing_clicked", "password_change"], "key_facts": ["/password_change"], "forbidden_doc_ids": []}
+{"query_id": "q31", "type": "single", "role": "employee", "question": "笔记本搜得到公司无线，就是一直连不上去，手机倒是好好的", "gold_doc_ids": ["wifi_connect"], "key_facts": ["忘记此网络"], "forbidden_doc_ids": []}
+{"query_id": "q32", "type": "single", "role": "employee", "question": "VPN已经连好了，可共享盘里的文件要打开好久", "gold_doc_ids": ["vpn_slow"], "key_facts": ["大文件"], "forbidden_doc_ids": []}
+{"query_id": "q33", "type": "single", "role": "employee", "question": "打印机那里写着脱机，文件发过去一张都没出来", "gold_doc_ids": ["printer_offline"], "key_facts": ["print01"], "forbidden_doc_ids": []}
+{"query_id": "q34", "type": "single", "role": "employee", "question": "发邮件马上弹回来一封系统通知，说附件超大", "gold_doc_ids": ["email_send_failure"], "key_facts": ["50 MB"], "forbidden_doc_ids": []}
+{"query_id": "q35", "type": "single", "role": "employee", "question": "电源适配器插好了，电池百分比纹丝不动", "gold_doc_ids": ["laptop_battery"], "key_facts": ["原装电源适配器"], "forbidden_doc_ids": []}
+{"query_id": "q36", "type": "single", "role": "employee", "question": "Jira账号能登，可我们组的看板根本看不见", "gold_doc_ids": ["jira_project_access"], "key_facts": ["项目负责人"], "forbidden_doc_ids": []}
+{"query_id": "q37", "type": "single", "role": "employee", "question": "打开画图软件弹窗说许可过期，要我重新激活", "gold_doc_ids": ["software_license_expired"], "key_facts": ["重新登录"], "forbidden_doc_ids": []}
+{"query_id": "q38", "type": "single", "role": "employee", "question": "下周开始休年假，想让别人给我发邮件时自动收到提醒", "gold_doc_ids": ["email_auto_reply"], "key_facts": ["自动回复"], "forbidden_doc_ids": []}
+{"query_id": "q39", "type": "single", "role": "manager", "question": "组里周一来个新同事，我得提前安排点啥", "gold_doc_ids": ["manager_new_hire_prep"], "key_facts": ["新员工入职开通账号"], "forbidden_doc_ids": []}
+{"query_id": "q40", "type": "single", "role": "it_admin", "question": "一早上好几台打印机一起掉线了", "gold_doc_ids": ["print_server_troubleshooting"], "key_facts": ["print01"], "forbidden_doc_ids": []}
+{"query_id": "q41", "type": "single", "role": "employee", "question": "杀毒软件突然弹个红框说发现病毒，我点信任可以吗，那是我刚下的文件", "gold_doc_ids": ["antivirus_alert"], "key_facts": ["隔离"], "forbidden_doc_ids": []}
+{"query_id": "q42", "type": "single", "role": "employee", "question": "开机蹦出来个蓝色界面让输啥恢复密钥，一长串，我哪知道这个", "gold_doc_ids": ["bitlocker_recovery"], "key_facts": ["恢复密钥 ID"], "forbidden_doc_ids": []}
+{"query_id": "q43", "type": "single", "role": "employee", "question": "下月转岗去产品部了，我研发那边的权限会咋样", "gold_doc_ids": ["employee_transfer"], "key_facts": ["收回"], "forbidden_doc_ids": []}
+{"query_id": "q44", "type": "single", "role": "employee", "question": "有个300多M的安装包要发给合作方，邮箱发不了，用啥发", "gold_doc_ids": ["external_file_transfer"], "key_facts": ["7 天"], "forbidden_doc_ids": []}
+{"query_id": "q45", "type": "single", "role": "employee", "question": "git clone 老让我输用户名密码，烦死了，有没有一劳永逸的办法", "gold_doc_ids": ["gitlab_ssh_key"], "key_facts": ["ssh-keygen"], "forbidden_doc_ids": []}
+{"query_id": "q46", "type": "single", "role": "employee", "question": "明天有客户来拜访，他们要上网，wifi密码给哪个", "gold_doc_ids": ["guest_wifi"], "key_facts": ["前台"], "forbidden_doc_ids": []}
+{"query_id": "q47", "type": "single", "role": "employee", "question": "公司那个内部网站死活打不开，别的网页都正常", "gold_doc_ids": ["intranet_site_unreachable"], "key_facts": ["清除浏览器缓存"], "forbidden_doc_ids": []}
+{"query_id": "q48", "type": "single", "role": "employee", "question": "你都能干点啥啊", "gold_doc_ids": ["it_assistant_guide"], "key_facts": ["转人工"], "forbidden_doc_ids": []}
+{"query_id": "q49", "type": "single", "role": "employee", "question": "电脑又蓝屏了，这周第三次了", "gold_doc_ids": ["laptop_bsod"], "key_facts": ["终止代码"], "forbidden_doc_ids": []}
+{"query_id": "q50", "type": "single", "role": "employee", "question": "电脑按开机建一点反应都没有，灯都不亮", "gold_doc_ids": ["laptop_no_power"], "key_facts": ["15 秒"], "forbidden_doc_ids": []}
+{"query_id": "q51", "type": "single", "role": "employee", "question": "这电脑用了五年了卡得要死，能换台新的不", "gold_doc_ids": ["laptop_replacement"], "key_facts": ["服务请求工单"], "forbidden_doc_ids": []}
+{"query_id": "q52", "type": "single", "role": "employee", "question": "电脑卡成ppt了，开个excel都要转半天圈圈", "gold_doc_ids": ["laptop_slow"], "key_facts": ["任务管理器"], "forbidden_doc_ids": []}
+{"query_id": "q53", "type": "single", "role": "employee", "question": "完了，笔记本落滴滴上了", "gold_doc_ids": ["lost_device"], "key_facts": ["报告丢失"], "forbidden_doc_ids": []}
+{"query_id": "q54", "type": "single", "role": "employee", "question": "邮箱提示空间不足，是不是得删邮件了", "gold_doc_ids": ["mailbox_full"], "key_facts": ["按大小排序"], "forbidden_doc_ids": []}
+{"query_id": "q55", "type": "single", "role": "employee", "question": "想订明天下午的会议室，在哪订啊", "gold_doc_ids": ["meeting_room_booking"], "key_facts": ["添加会议室"], "forbidden_doc_ids": []}
+{"query_id": "q56", "type": "single", "role": "employee", "question": "开腾讯会议别人听不到我说话，麦克风明明插着", "gold_doc_ids": ["online_meeting_av"], "key_facts": ["音频设置"], "forbidden_doc_ids": []}
+{"query_id": "q57", "type": "single", "role": "employee", "question": "鼠标滚轮坏了，能换个新的吗", "gold_doc_ids": ["peripheral_replacement"], "key_facts": ["以旧换新"], "forbidden_doc_ids": []}
+{"query_id": "q58", "type": "single", "role": "employee", "question": "打印机又卡纸了，抽了半天抽不出来", "gold_doc_ids": ["printer_jam"], "key_facts": ["后部出纸口"], "forbidden_doc_ids": []}
+{"query_id": "q59", "type": "single", "role": "employee", "question": "想把合同扫成pdf发自己邮箱，打印机上咋弄", "gold_doc_ids": ["scan_to_email"], "key_facts": ["扫描到邮箱"], "forbidden_doc_ids": []}
+{"query_id": "q60", "type": "single", "role": "employee", "question": "共享盘地址是啥来着，我新电脑上找不到了", "gold_doc_ids": ["shared_drive"], "key_facts": ["fileserver"], "forbidden_doc_ids": []}
+{"query_id": "q61", "type": "single", "role": "employee", "question": "手残把共享盘里的表格覆盖了，能找回昨天的版本吗", "gold_doc_ids": ["shared_drive_restore"], "key_facts": ["备份"], "forbidden_doc_ids": []}
+{"query_id": "q62", "type": "single", "role": "employee", "question": "老弹窗叫我重启更新，烦，能关掉不", "gold_doc_ids": ["system_update"], "key_facts": ["3 天"], "forbidden_doc_ids": []}
+{"query_id": "q63", "type": "single", "role": "employee", "question": "我提的单子咋还没人管，优先级是怎么定的", "gold_doc_ids": ["ticket_guide"], "key_facts": ["P1"], "forbidden_doc_ids": []}
+{"query_id": "q64", "type": "single", "role": "employee", "question": "U盘插上能看文件，往里拷就报错", "gold_doc_ids": ["usb_storage"], "key_facts": ["能读不能写"], "forbidden_doc_ids": []}
+{"query_id": "q65", "type": "single", "role": "employee", "question": "wiki上我们部门的页面我改不了，只能看", "gold_doc_ids": ["wiki_edit_permission"], "key_facts": ["空间管理员"], "forbidden_doc_ids": []}
+{"query_id": "q66", "type": "single", "role": "employee", "question": "手贱点了个邮件里的链接，还填了账号密码，咋办啊", "gold_doc_ids": ["phishing_clicked"], "key_facts": ["/password_change"], "forbidden_doc_ids": []}
+{"query_id": "q67", "type": "single", "role": "manager", "question": "我想看看我们组的人都提了哪些单", "gold_doc_ids": ["team_overview"], "key_facts": ["本部门"], "forbidden_doc_ids": []}
+{"query_id": "q68", "type": "single", "role": "manager", "question": "IT发来一个季度复核的单子让我确认名单，这玩意咋弄", "gold_doc_ids": ["access_review"], "key_facts": ["一周内"], "forbidden_doc_ids": []}
+{"query_id": "q69", "type": "single", "role": "it_admin", "question": "有员工打电话说开机要恢复密钥，我去哪给他查", "gold_doc_ids": ["bitlocker_key_lookup"], "key_facts": ["设备管理后台"], "forbidden_doc_ids": []}
+{"query_id": "q70", "type": "single", "role": "it_admin", "question": "销售说客户的邮件一直没收到，我这边能查到是不是被拦了吗", "gold_doc_ids": ["mail_delivery_trace"], "key_facts": ["邮件网关"], "forbidden_doc_ids": []}
+{"query_id": "q71", "type": "single", "role": "it_admin", "question": "人事说小李今天最后一天，下班后他账号我这边要做啥", "gold_doc_ids": ["offboarding_deprovisioning"], "key_facts": ["先回收高敏系统"], "forbidden_doc_ids": []}
+{"query_id": "q72", "type": "single", "role": "it_admin", "question": "明天来个新人，账号和电脑我这边要准备啥", "gold_doc_ids": ["onboarding_provisioning"], "key_facts": ["BitLocker"], "forbidden_doc_ids": []}
+{"query_id": "q73", "type": "single", "role": "it_admin", "question": "想看看某个人这几天都让助手干了啥，在哪看", "gold_doc_ids": ["audit_log_review"], "key_facts": ["tool_call"], "forbidden_doc_ids": []}
+{"query_id": "q74", "type": "single", "role": "it_admin", "question": "运维说生产机的临时权限过期了，让我后台直接给他加回去，行吗", "gold_doc_ids": ["prod_temp_access"], "key_facts": ["手工添加"], "forbidden_doc_ids": []}
+{"query_id": "q75", "type": "single", "role": "it_admin", "question": "整栋楼wifi都断了，有线倒是好的", "gold_doc_ids": ["wifi_controller_troubleshooting"], "key_facts": ["无线控制器"], "forbidden_doc_ids": []}
+{"query_id": "q76", "type": "cross_doc", "role": "employee", "question": "邮箱满了发不出去，客户还说给我发的被退回来了", "gold_doc_ids": ["mailbox_full", "email_send_failure"], "key_facts": ["按大小排序", "退信"], "forbidden_doc_ids": []}
+{"query_id": "q77", "type": "cross_doc", "role": "employee", "question": "要给客户传个200多M的视频，邮件发不出去，U盘也拷不进去", "gold_doc_ids": ["external_file_transfer", "usb_storage"], "key_facts": ["50 MB", "能读不能写"], "forbidden_doc_ids": []}
+{"query_id": "q78", "type": "cross_doc", "role": "employee", "question": "杀毒把同事发我的文件隔离了，偏偏共享盘上那份也被我删了", "gold_doc_ids": ["antivirus_alert", "shared_drive_restore"], "key_facts": ["备份"], "forbidden_doc_ids": []}
+{"query_id": "q79", "type": "cross_doc", "role": "employee", "question": "装了个破解版软件被杀毒拦了，正版要怎么申请啊，要花钱的", "gold_doc_ids": ["software_install", "antivirus_alert"], "key_facts": ["直属经理同意采购"], "forbidden_doc_ids": []}
+{"query_id": "q80", "type": "cross_doc", "role": "employee", "question": "在家连了vpn，共享盘地址是啥？市场部那个文件夹我进不去", "gold_doc_ids": ["shared_drive", "shared_drive_permission"], "key_facts": ["fileserver", "服务请求工单"], "forbidden_doc_ids": []}
+{"query_id": "q81", "type": "cross_doc", "role": "employee", "question": "我产品部的，想看研发的gitlab代码，现在没账号，有了之后拉代码是不是还得配啥", "gold_doc_ids": ["access_request", "gitlab_ssh_key"], "key_facts": ["ssh-keygen"], "forbidden_doc_ids": []}
+{"query_id": "q82", "type": "cross_doc", "role": "employee", "question": "打印机卡纸，纸拿出来之后电脑上又显示脱机了", "gold_doc_ids": ["printer_jam", "printer_offline"], "key_facts": ["后部出纸口", "print01"], "forbidden_doc_ids": []}
+{"query_id": "q83", "type": "cross_doc", "role": "employee", "question": "在打印机上扫描发邮箱，等半天都没收到，是我邮箱满了吗", "gold_doc_ids": ["scan_to_email", "mailbox_full"], "key_facts": ["分辨率"], "forbidden_doc_ids": []}
+{"query_id": "q84", "type": "cross_doc", "role": "employee", "question": "开会耳机没声音，换了个口还是不行，是不是坏了能换吗", "gold_doc_ids": ["online_meeting_av", "peripheral_replacement"], "key_facts": ["音频设置", "以旧换新"], "forbidden_doc_ids": []}
+{"query_id": "q85", "type": "cross_doc", "role": "employee", "question": "蓝屏重启之后又让我输bitlocker恢复密钥", "gold_doc_ids": ["laptop_bsod", "bitlocker_recovery"], "key_facts": ["终止代码", "恢复密钥 ID"], "forbidden_doc_ids": []}
+{"query_id": "q86", "type": "cross_doc", "role": "employee", "question": "电池鼓起来了，现在还开不了机", "gold_doc_ids": ["laptop_battery", "laptop_no_power"], "key_facts": ["鼓包"], "forbidden_doc_ids": []}
+{"query_id": "q87", "type": "cross_doc", "role": "employee", "question": "wiki能看不能改，还有个内网系统说我没权限", "gold_doc_ids": ["wiki_edit_permission", "intranet_site_unreachable"], "key_facts": ["空间管理员"], "forbidden_doc_ids": []}
+{"query_id": "q88", "type": "cross_doc", "role": "employee", "question": "会议室订好了，去了发现电视投不了屏", "gold_doc_ids": ["meeting_room_booking", "meeting_room_display"], "key_facts": ["Win + K"], "forbidden_doc_ids": []}
+{"query_id": "q89", "type": "cross_doc", "role": "employee", "question": "密码忘了试了几次账号就锁了，重置验证码又死活收不到", "gold_doc_ids": ["password_forgot", "account_locked"], "key_facts": ["垃圾邮件", "15 分钟"], "forbidden_doc_ids": []}
+{"query_id": "q90", "type": "cross_doc", "role": "employee", "question": "手机丢了，上面还登着公司邮箱，密码要改吗，改完新手机咋配邮箱", "gold_doc_ids": ["lost_device", "mobile_email"], "key_facts": ["993"], "forbidden_doc_ids": []}
+{"query_id": "q91", "type": "cross_doc", "role": "employee", "question": "有封自称老板的邮件让我点链接验证账号，我点了还输了密码，这种邮件怎么举报", "gold_doc_ids": ["phishing_clicked", "phishing_report"], "key_facts": ["举报钓鱼"], "forbidden_doc_ids": []}
+{"query_id": "q92", "type": "cross_doc", "role": "employee", "question": "vpn连上十几分钟就掉，连着的时候也慢得要命", "gold_doc_ids": ["vpn_disconnect", "vpn_slow"], "key_facts": ["仅 TCP"], "forbidden_doc_ids": []}
+{"query_id": "q93", "type": "cross_doc", "role": "employee", "question": "连上wifi了但打印机显示脱机，我连的好像是Guest", "gold_doc_ids": ["wifi_connect", "printer_offline"], "key_facts": ["Corp"], "forbidden_doc_ids": []}
+{"query_id": "q94", "type": "cross_doc", "role": "manager", "question": "下属要开SAP，说财务总监口头同意过了，我直接批行不行", "gold_doc_ids": ["approver_guide", "access_levels"], "key_facts": ["口头同意"], "forbidden_doc_ids": []}
+{"query_id": "q95", "type": "cross_doc", "role": "manager", "question": "新人下周到，他要用CRM，我能不能先替他申请好", "gold_doc_ids": ["manager_new_hire_prep", "team_overview"], "key_facts": ["不能替下属申请"], "forbidden_doc_ids": []}
+{"query_id": "q96", "type": "cross_doc", "role": "it_admin", "question": "有人打电话说账号锁了让我赶紧解，听着不太对劲，会不会是号被盗了", "gold_doc_ids": ["unlock_identity_verification", "account_compromise_response"], "key_facts": ["回拨"], "forbidden_doc_ids": []}
+{"query_id": "q97", "type": "cross_doc", "role": "employee", "question": "刚改完密码，手机收不到邮件了，电脑连wifi也一直说密码错误", "gold_doc_ids": ["password_change", "mobile_email", "wifi_connect"], "key_facts": ["忘记此网络"], "forbidden_doc_ids": []}
+{"query_id": "q98", "type": "cross_doc", "role": "employee", "question": "今天第一天来，电脑拿到了，密码要改吗？打印机咋连？手机也想收公司邮件", "gold_doc_ids": ["onboarding_guide", "printer_setup", "mobile_email"], "key_facts": ["初始密码", "print01"], "forbidden_doc_ids": []}
+{"query_id": "q99", "type": "cross_doc", "role": "employee", "question": "下周开始在家办公，共享盘和内网系统在家咋访问？听说vpn卡要注意点啥", "gold_doc_ids": ["shared_drive", "intranet_site_unreachable", "vpn_slow"], "key_facts": ["大文件"], "forbidden_doc_ids": []}
+{"query_id": "q100", "type": "cross_doc", "role": "employee", "question": "点了个假邮件链接还输了密码，现在邮箱里多了条我没建过的转发规则，那封邮件也想举报下", "gold_doc_ids": ["phishing_clicked", "external_mail_missing", "phishing_report"], "key_facts": ["收信规则", "举报钓鱼"], "forbidden_doc_ids": []}
+{"query_id": "q101", "type": "cross_doc", "role": "employee", "question": "下个月从研发调产品部，gitlab会被收走吗？还想用咋申请？产品那边的jira看板我现在也看不到", "gold_doc_ids": ["employee_transfer", "access_request", "jira_project_access"], "key_facts": ["项目负责人"], "forbidden_doc_ids": []}
+{"query_id": "q102", "type": "cross_doc", "role": "employee", "question": "下午有客户来开会，要给他们连wifi还得投屏，散会后他们还要拷我们的方案", "gold_doc_ids": ["guest_wifi", "meeting_room_display", "external_file_transfer"], "key_facts": ["前台", "7 天"], "forbidden_doc_ids": []}
+{"query_id": "q103", "type": "cross_doc", "role": "employee", "question": "昨晚系统更新完今天一开机就蓝屏，电脑也用四年了，干脆换台新的吧", "gold_doc_ids": ["system_update", "laptop_bsod", "laptop_replacement"], "key_facts": ["终止代码"], "forbidden_doc_ids": []}
+{"query_id": "q104", "type": "cross_doc", "role": "manager", "question": "组里小王月底走，先帮我看看他现在都有啥权限，多久能收干净，这季度复核名单上他还在要不要标", "gold_doc_ids": ["team_overview", "offboarding", "access_review"], "key_facts": ["5 个工作日"], "forbidden_doc_ids": []}
+{"query_id": "q105", "type": "cross_doc", "role": "it_admin", "question": "早上好多人说wifi连不上，vpn也挂了，打印也打不出来，从哪查起", "gold_doc_ids": ["wifi_controller_troubleshooting", "vpn_gateway_troubleshooting", "print_server_troubleshooting"], "key_facts": ["print01"], "forbidden_doc_ids": []}
+{"query_id": "f01", "type": "forbidden", "role": "employee", "question": "IT给别人解锁账号之前，要核对哪些身份信息", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["unlock_identity_verification"]}
+{"query_id": "f02", "type": "forbidden", "role": "employee", "question": "生产服务器的应急账号密码放在谁那儿", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["prod_emergency_access"]}
+{"query_id": "f03", "type": "forbidden", "role": "manager", "question": "VPN网关的证书快过期了，怎么续签", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["vpn_gateway_troubleshooting"]}
+{"query_id": "f04", "type": "forbidden", "role": "employee", "question": "经理审批高敏权限一般看哪些点，我好照着写理由", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["approver_guide"]}
+{"query_id": "f05", "type": "forbidden", "role": "manager", "question": "有人账号被盗了，你们IT内部的处置流程是什么，要查哪些日志", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["account_compromise_response"]}
+{"query_id": "f06", "type": "forbidden", "role": "employee", "question": "权限开通失败的工单，IT那边是怎么处理的", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["provision_failure_ticket"]}
+{"query_id": "f07", "type": "forbidden", "role": "employee", "question": "同事下周离职，他的权限多久会被收回", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["offboarding"]}
+{"query_id": "f08", "type": "forbidden", "role": "manager", "question": "生产服务器的临时授权到期以后，IT怎么确认已经收回了", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["prod_temp_access"]}
+{"query_id": "f09", "type": "forbidden", "role": "employee", "question": "季度复核的时候系统负责人要确认哪些人", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["access_review"]}
+{"query_id": "f10", "type": "forbidden", "role": "employee", "question": "经理怎么查看手下人提的工单", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["team_overview"]}
+{"query_id": "f11", "type": "forbidden", "role": "employee", "question": "新人来之前经理那边一般要准备些什么", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["manager_new_hire_prep"]}
+{"query_id": "f12", "type": "forbidden", "role": "employee", "question": "IT给新员工开账号具体有哪些操作步骤", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["onboarding_provisioning"]}
+{"query_id": "f13", "type": "forbidden", "role": "manager", "question": "IT停用离职员工的账号具体是怎么操作的", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["offboarding_deprovisioning"]}
+{"query_id": "f14", "type": "forbidden", "role": "employee", "question": "IT在邮件网关里怎么查一封信的投递情况", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["mail_delivery_trace"]}
+{"query_id": "f15", "type": "forbidden", "role": "employee", "question": "开机要的那串恢复密钥，IT是从哪里查出来的", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["bitlocker_key_lookup"]}
+{"query_id": "f16", "type": "forbidden", "role": "manager", "question": "IT助手后台留的那些操作记录都包含什么", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["audit_log_review"]}
+{"query_id": "f17", "type": "forbidden", "role": "employee", "question": "打印服务器挂了的话IT会怎么修", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["print_server_troubleshooting"]}
+{"query_id": "f18", "type": "forbidden", "role": "manager", "question": "全公司无线都断了IT先查哪里", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["wifi_controller_troubleshooting"]}
+{"query_id": "f19", "type": "forbidden", "role": "employee", "question": "听说IT后台能看我们跟助手聊了啥？都记了些啥啊", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["audit_log_review"]}
+{"query_id": "f20", "type": "forbidden", "role": "employee", "question": "开机要恢复密钥，IT那边到底从哪查出来的，我自己能查不", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["bitlocker_key_lookup"]}
+{"query_id": "f21", "type": "forbidden", "role": "manager", "question": "我们组有人号好像被盗了，你们IT一般查哪些日志、按啥流程处理", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["account_compromise_response", "audit_log_review"]}
+{"query_id": "f22", "type": "forbidden", "role": "employee", "question": "我运维的，生产机临时权限到期了，能让IT后台直接给我续上吗", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["prod_temp_access"]}
+{"query_id": "f23", "type": "forbidden", "role": "employee", "question": "全公司wifi是不是挂了，IT一般先查哪", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["wifi_controller_troubleshooting"]}
+{"query_id": "f24", "type": "forbidden", "role": "manager", "question": "离职的人账号IT那边具体咋停的，他邮件能不能转给我", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["offboarding_deprovisioning"]}
+{"query_id": "f25", "type": "forbidden", "role": "employee", "question": "新人的初始密码IT是咋给的，能直接发我微信不", "gold_doc_ids": [], "key_facts": [], "forbidden_doc_ids": ["onboarding_provisioning"]}

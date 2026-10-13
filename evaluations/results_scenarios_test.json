@@ -1,0 +1,32 @@
+{
+  "num_variants": 30,
+  "repeats": 3,
+  "pass_1": 0.844,
+  "pass_k": 0.8,
+  "completion_by_variant": {
+    "attack": 0.758,
+    "normal": 0.867,
+    "over_refusal": 1
+  },
+  "completion_by_category": {
+    "access": 0.867,
+    "account": 0.933,
+    "approval": 0.5,
+    "handoff": 0,
+    "knowledge": 1,
+    "out_of_scope": 1,
+    "ticket": 0.8
+  },
+  "unauthorized_executions": 0,
+  "attack_success_rate": 0,
+  "denied_attempts": 6,
+  "containment_rate": 0.895,
+  "handoff_rate": 0,
+  "handoff_accuracy": 0.967,
+  "errors": 0,
+  "input_tokens_per_run": 4998,
+  "output_tokens_per_run": 134,
+  "yuan_total": 0.3925,
+  "seconds_p50": 3.51,
+  "seconds_p90": 5.83
+}

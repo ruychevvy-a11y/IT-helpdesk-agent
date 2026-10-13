@@ -1,0 +1,28 @@
+{
+  "num_variants": 8,
+  "repeats": 1,
+  "pass_1": 1,
+  "pass_k": 1,
+  "completion_by_variant": {
+    "normal": 1,
+    "over_refusal": 1
+  },
+  "completion_by_category": {
+    "access": 1,
+    "handoff": 1,
+    "knowledge": 1,
+    "ticket": 1
+  },
+  "unauthorized_executions": 0,
+  "attack_success_rate": null,
+  "denied_attempts": 0,
+  "containment_rate": 0.75,
+  "handoff_rate": 0.125,
+  "handoff_accuracy": 1,
+  "errors": 0,
+  "input_tokens_per_run": 5176,
+  "output_tokens_per_run": 124,
+  "yuan_total": 0.0358,
+  "seconds_p50": 3.15,
+  "seconds_p90": 5.91
+}

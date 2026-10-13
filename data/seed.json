@@ -1,0 +1,147 @@
+{
+  "initial_password": "Helpdesk@2026",
+  "employees": [
+    {"id": "E1001", "name": "周建国", "department": "总经办", "role": "manager", "manager_id": null},
+
+    {"id": "E1002", "name": "陈立", "department": "IT", "role": "it_admin", "manager_id": "E1001"},
+    {"id": "E1003", "name": "刘洋", "department": "IT", "role": "it_admin", "manager_id": "E1002"},
+    {"id": "E1004", "name": "赵敏", "department": "IT", "role": "it_admin", "manager_id": "E1002"},
+    {"id": "E1005", "name": "孙浩", "department": "IT", "role": "employee", "manager_id": "E1002"},
+
+    {"id": "E1006", "name": "王海涛", "department": "研发", "role": "manager", "manager_id": "E1001"},
+    {"id": "E1007", "name": "李娜", "department": "研发", "role": "employee", "manager_id": "E1006"},
+    {"id": "E1008", "name": "张伟", "department": "研发", "role": "employee", "manager_id": "E1006"},
+    {"id": "E1009", "name": "吴俊杰", "department": "研发", "role": "employee", "manager_id": "E1006"},
+    {"id": "E1010", "name": "郑晓东", "department": "研发", "role": "employee", "manager_id": "E1006"},
+    {"id": "E1011", "name": "黄思远", "department": "研发", "role": "employee", "manager_id": "E1006"},
+    {"id": "E1012", "name": "马骁", "department": "研发", "role": "employee", "manager_id": "E1006"},
+    {"id": "E1013", "name": "林雨桐", "department": "研发", "role": "employee", "manager_id": "E1006"},
+    {"id": "E1014", "name": "何振宇", "department": "研发", "role": "employee", "manager_id": "E1006"},
+
+    {"id": "E1015", "name": "杨帆", "department": "产品", "role": "manager", "manager_id": "E1001"},
+    {"id": "E1016", "name": "徐婷婷", "department": "产品", "role": "employee", "manager_id": "E1015"},
+    {"id": "E1017", "name": "朱磊", "department": "产品", "role": "employee", "manager_id": "E1015"},
+    {"id": "E1018", "name": "胡月", "department": "产品", "role": "employee", "manager_id": "E1015"},
+
+    {"id": "E1019", "name": "郭红梅", "department": "财务", "role": "manager", "manager_id": "E1001"},
+    {"id": "E1020", "name": "高静", "department": "财务", "role": "employee", "manager_id": "E1019"},
+    {"id": "E1021", "name": "罗晓燕", "department": "财务", "role": "employee", "manager_id": "E1019"},
+    {"id": "E1022", "name": "梁斌", "department": "财务", "role": "employee", "manager_id": "E1019"},
+
+    {"id": "E1023", "name": "宋佳", "department": "人力资源", "role": "manager", "manager_id": "E1001"},
+    {"id": "E1024", "name": "谢雯", "department": "人力资源", "role": "employee", "manager_id": "E1023"},
+    {"id": "E1025", "name": "韩冰", "department": "人力资源", "role": "employee", "manager_id": "E1023"},
+
+    {"id": "E1026", "name": "唐亮", "department": "市场", "role": "manager", "manager_id": "E1001"},
+    {"id": "E1027", "name": "冯晓雪", "department": "市场", "role": "employee", "manager_id": "E1026"},
+    {"id": "E1028", "name": "董鹏", "department": "市场", "role": "employee", "manager_id": "E1026"},
+    {"id": "E1029", "name": "曹琳", "department": "市场", "role": "employee", "manager_id": "E1026"},
+    {"id": "E1030", "name": "彭凯", "department": "市场", "role": "employee", "manager_id": "E1026"}
+  ],
+  "systems": [
+    {"id": "email", "name": "企业邮箱", "sensitivity": "low", "owner_id": "E1003", "grant_days": null},
+    {"id": "vpn", "name": "VPN", "sensitivity": "low", "owner_id": "E1004", "grant_days": null},
+    {"id": "wiki", "name": "Wiki", "sensitivity": "low", "owner_id": "E1002", "grant_days": null},
+    {"id": "gitlab", "name": "GitLab", "sensitivity": "medium", "owner_id": "E1006", "grant_days": null},
+    {"id": "jira", "name": "Jira", "sensitivity": "medium", "owner_id": "E1015", "grant_days": null},
+    {"id": "crm", "name": "CRM", "sensitivity": "medium", "owner_id": "E1026", "grant_days": null},
+    {"id": "sap", "name": "财务 SAP", "sensitivity": "high", "owner_id": "E1019", "grant_days": null},
+    {"id": "hr_system", "name": "人事系统", "sensitivity": "high", "owner_id": "E1023", "grant_days": null},
+    {"id": "prod_servers", "name": "生产服务器（堡垒机）", "sensitivity": "high", "owner_id": "E1005", "grant_days": 7}
+  ],
+  "baseline_grants": {
+    "总经办": ["email", "vpn", "wiki"],
+    "IT": ["email", "vpn", "wiki", "gitlab", "jira"],
+    "研发": ["email", "vpn", "wiki", "gitlab", "jira"],
+    "产品": ["email", "vpn", "wiki", "jira"],
+    "财务": ["email", "vpn", "wiki", "sap"],
+    "人力资源": ["email", "vpn", "wiki", "hr_system"],
+    "市场": ["email", "vpn", "wiki", "crm"]
+  },
+  "extra_grants": [
+    {"employee_id": "E1002", "system_id": "prod_servers", "granted_at": "2026-03-02 01:00:00", "expires_at": null},
+    {"employee_id": "E1005", "system_id": "prod_servers", "granted_at": "2026-03-02 01:00:00", "expires_at": null},
+    {"employee_id": "E1001", "system_id": "crm", "granted_at": "2026-04-13 02:30:00", "expires_at": null},
+    {"employee_id": "E1016", "system_id": "gitlab", "granted_at": "2026-08-18 06:10:00", "expires_at": null},
+    {"employee_id": "E1009", "system_id": "prod_servers", "granted_at": "2026-09-12 06:30:00", "expires_at": "2026-09-19 06:30:00"}
+  ],
+  "tickets": [
+    {
+      "requester_id": "E1001", "ticket_type": "incident",
+      "title": "大会议室投屏连不上",
+      "description": "下午两点要开经营会，大会议室的无线投屏一直搜不到设备，笔记本插 HDMI 也没反应。",
+      "impact": "medium", "urgency": "high", "priority": "P2",
+      "status": "closed", "assignee_group": "L1", "created_at": "2026-09-17 05:40:00"
+    },
+    {
+      "requester_id": "E1016", "ticket_type": "service_request",
+      "title": "申请安装 Axure RP",
+      "description": "新项目要画交互原型，麻烦帮我装一下 Axure RP，公司有正版授权的话用公司的。",
+      "impact": "low", "urgency": "low", "priority": "P4",
+      "status": "resolved", "assignee_group": "L1", "created_at": "2026-09-22 02:30:00"
+    },
+    {
+      "requester_id": "E1021", "ticket_type": "incident",
+      "title": "收到冒充周总的邮件让转账",
+      "description": "上午收到一封邮件，发件人显示周建国，让我今天下班前往一个新的供应商账户转 38 万，说在外面开会不方便接电话。邮箱地址后缀不是公司的，我没转，邮件还留着。",
+      "impact": "medium", "urgency": "high", "priority": "P2",
+      "status": "resolved", "assignee_group": "L2", "created_at": "2026-09-23 02:18:00"
+    },
+    {
+      "requester_id": "E1011", "ticket_type": "incident",
+      "title": "GitLab CI 流水线全部卡在 pending",
+      "description": "从下午三点多开始所有流水线都卡在 pending，runner 页面显示全部离线，整个研发部都没法合并代码，今晚还要发版。",
+      "impact": "high", "urgency": "high", "priority": "P1",
+      "status": "resolved", "assignee_group": "L2", "created_at": "2026-09-24 07:48:00"
+    },
+    {
+      "requester_id": "E1010", "ticket_type": "incident",
+      "title": "笔记本进水开不了机",
+      "description": "早上咖啡洒到键盘上了，擦干以后按电源键没有任何反应，充电灯也不亮。里面有还没提交的代码。",
+      "impact": "low", "urgency": "high", "priority": "P3",
+      "status": "in_progress", "assignee_group": "L1", "created_at": "2026-09-25 01:30:00"
+    },
+    {
+      "requester_id": "E1007", "ticket_type": "incident",
+      "title": "VPN 连上十几分钟就断",
+      "description": "在家用 VPN 客户端连公司内网，每次连上十几分钟就自动断开，要重新输密码。家里 Wi-Fi 别的都正常，暂时用手机热点凑合。",
+      "impact": "low", "urgency": "medium", "priority": "P4",
+      "status": "in_progress", "assignee_group": "L1", "created_at": "2026-09-26 01:20:00"
+    },
+    {
+      "requester_id": "E1024", "ticket_type": "service_request",
+      "title": "新员工入职开通账号",
+      "description": "研发部新同事 10 月 8 日入职，请提前开通企业邮箱、VPN 和 Wiki 账号，入职当天发给本人。",
+      "impact": "low", "urgency": "medium", "priority": "P4",
+      "status": "open", "assignee_group": "L1", "created_at": "2026-09-27 08:40:00"
+    },
+    {
+      "requester_id": "E1028", "ticket_type": "incident",
+      "title": "收不到客户发来的邮件",
+      "description": "客户说昨天下午给我发了报价确认邮件，我收件箱和垃圾邮件里都没有，内部同事发的能收到。客户那边在等我回复。",
+      "impact": "low", "urgency": "high", "priority": "P3",
+      "status": "open", "assignee_group": "L1", "created_at": "2026-09-28 03:12:00"
+    },
+    {
+      "requester_id": "E1020", "ticket_type": "incident",
+      "title": "财务室打印机卡纸",
+      "description": "财务室那台 HP 打印机一直提示卡纸，纸盒里看不到纸，重启也没用。月底结账今天要打凭证，我们部门都用这一台。",
+      "impact": "medium", "urgency": "high", "priority": "P2",
+      "status": "open", "assignee_group": "L1", "created_at": "2026-09-28 06:05:00"
+    },
+    {
+      "requester_id": "E1029", "ticket_type": "incident",
+      "title": "共享盘市场部文件夹打不开",
+      "description": "共享盘里「市场部」文件夹今天突然打不开，提示没有访问权限，部门其他同事也一样，上周还是好的。",
+      "impact": "medium", "urgency": "medium", "priority": "P3",
+      "status": "open", "assignee_group": "L1", "created_at": "2026-09-28 07:26:00"
+    },
+    {
+      "requester_id": "E1008", "ticket_type": "service_request",
+      "title": "申请安装 Docker Desktop",
+      "description": "本地要跑服务联调，需要装 Docker Desktop，电脑没有管理员权限装不了。",
+      "impact": "low", "urgency": "low", "priority": "P4",
+      "status": "open", "assignee_group": "L1", "created_at": "2026-09-28 09:20:00"
+    }
+  ]
+}

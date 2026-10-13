@@ -1,0 +1,66 @@
+{
+  "whole_dense": {
+    "hit@4": 30.0,
+    "queries": 30,
+    "coverage@4_cross_doc": 4.0,
+    "cross_doc_queries": 4,
+    "mrr": 0.9667,
+    "leaks": 0
+  },
+  "whole_bm25": {
+    "hit@4": 30.0,
+    "queries": 30,
+    "coverage@4_cross_doc": 3.0,
+    "cross_doc_queries": 4,
+    "mrr": 0.9611,
+    "leaks": 0
+  },
+  "whole_rrf": {
+    "hit@4": 30.0,
+    "queries": 30,
+    "coverage@4_cross_doc": 4.0,
+    "cross_doc_queries": 4,
+    "mrr": 0.9667,
+    "leaks": 0
+  },
+  "whole_rrf_rerank": {
+    "hit@4": 30.0,
+    "queries": 30,
+    "coverage@4_cross_doc": 4.0,
+    "cross_doc_queries": 4,
+    "mrr": 1.0,
+    "leaks": 0
+  },
+  "section_dense": {
+    "hit@4": 30.0,
+    "queries": 30,
+    "coverage@4_cross_doc": 3.0,
+    "cross_doc_queries": 4,
+    "mrr": 0.9333,
+    "leaks": 0
+  },
+  "section_bm25": {
+    "hit@4": 29.0,
+    "queries": 30,
+    "coverage@4_cross_doc": 3.0,
+    "cross_doc_queries": 4,
+    "mrr": 0.9583,
+    "leaks": 0
+  },
+  "section_rrf": {
+    "hit@4": 30.0,
+    "queries": 30,
+    "coverage@4_cross_doc": 3.0,
+    "cross_doc_queries": 4,
+    "mrr": 0.9667,
+    "leaks": 0
+  },
+  "section_rrf_rerank": {
+    "hit@4": 30.0,
+    "queries": 30,
+    "coverage@4_cross_doc": 4.0,
+    "cross_doc_queries": 4,
+    "mrr": 1.0,
+    "leaks": 0
+  }
+}

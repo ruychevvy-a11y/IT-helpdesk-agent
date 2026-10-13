@@ -1,0 +1,13 @@
+{
+  "num_queries": 105,
+  "hits": 105,
+  "leaks": 0,
+  "cross_2_docs": {
+    "num_queries": 25,
+    "covered": 24
+  },
+  "cross_3_docs": {
+    "num_queries": 9,
+    "covered": 9
+  }
+}
